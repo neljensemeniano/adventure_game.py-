@@ -1,0 +1,16 @@
+import time
+
+def print_slow(text):
+    for char in text:
+        print(char, end="", flush=True)
+        time.sleep(0.05)
+    print()
+
+print_slow("You wake up in a dark, cold place. You can't remember how you got here.\n")
+print_slow("As your eyes adjust to the darkness, you see that you are in an abandoned mine.\n")
+print_slow("You must find a way out.\n")
+
+# Main game loop goes here
+# ...
+
+print_slow("Congratulations! You made it out of the mine alive!")
